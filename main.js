@@ -8,7 +8,8 @@ $(document).ready(function(){
 		statusCode: {404: function(){alert("Page not found!");}}		
 	}).done(function(data) {
 		// var rest;
-		console.log(data);
+		var obj = data;
+		console.log(obj);
 		// $.each(data.result, function(n,value){
 		// 	var cont = "";
 		// 	cont = "<li>"+value+"</li>";
