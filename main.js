@@ -6,13 +6,14 @@ $(document).ready(function(){
 	$.ajax({
 		url: addr,
 		statusCode: {404: function(){alert("Page not found!");}}		
-	}).done(function(data) {
+	}).done(function() {
 		console.log("in");
-		console.log(lala);
-		var dataset = data.data;
-		console.log(dataset);
+		// console.log(lala);
+		// var dataset = data.data;
+		// console.log(dataset);
 	});
 	select.onchange = function(){
 		segmnt = this.value;
+		console.log(segmnt);
 	};
 });
