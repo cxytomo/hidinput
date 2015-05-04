@@ -9,7 +9,7 @@ $(document).ready(function(){
 	}).done(function(data) {
 		// var rest;
 		var obj = data;
-		return obj
+		console.log(obj);
 		// $.each(data.result, function(n,value){
 		// 	var cont = "";
 		// 	cont = "<li>"+value+"</li>";
