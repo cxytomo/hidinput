@@ -8,8 +8,8 @@ $(document).ready(function(){
 		statusCode: {404: function(){alert("Page not found!");}}		
 	}).done(function(data) {
 		console.log($);
-		$.each(data, function(n,value){
-			console.log(n + ':' + eval(value));
+		$.each(data, function(n,eval(value){
+			console.log(n + ':' );
 		});
 	});
 
