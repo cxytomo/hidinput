@@ -7,17 +7,14 @@ $(document).ready(function(){
 		url: addr,
 		statusCode: {404: function(){alert("Page not found!");}}		
 	}).done(function(data) {
-		// var rest;
-		var data;
-		console.log(data.result);
-		// $.each(data.result, function(n,value){
-		// 	var cont = "";
-		// 	cont = "<li>"+value+"</li>";
-		// 	licon += cont;
-		// });
-		// rest = $('ul').html(licon);
-		// rest.attr('id','result');
-		// $('.content').append(rest);
+		var rest;
+		console.log(data);
+		$.each(data, function(n,value){
+			console.log(n + ':' + value);
+		});
+		rest = $('ul').html(licon);
+		rest.attr('id','result');
+		$('.content').append(rest);
 	});
 
 	select.onchange = function(){
