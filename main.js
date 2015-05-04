@@ -7,9 +7,11 @@ $(document).ready(function(){
 		url: addr,
 		statusCode: {404: function(){alert("Page not found!");}}		
 	}).done(function(data) {
-		console.log(data);
-		$.each(data, function(n,value){
-			console.log(n + ':' + eval(value));
+		console.log($);
+		data.each(function(n,value){
+			value.each(function(n,value){
+				console.log(value);
+			});
 		});
 	});
 
