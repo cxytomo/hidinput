@@ -7,10 +7,10 @@ $(document).ready(function(){
 		url: addr,
 		statusCode: {404: function(){alert("Page not found!");}}		
 	}).done(function(data) {
-		console.log($);
-		$.each(data, function(n,eval(value))){
-			console.log(n + ':' );
-		});
+		console.log($JSON.parse(data));
+		// $.each(data, function(n,eval(value))){
+		// 	console.log(n + ':' );
+		// });
 	});
 
 	select.onchange = function(){
