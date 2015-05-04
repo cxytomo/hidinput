@@ -3,6 +3,7 @@ $(document).ready(function(){
 	, segmnt = select.value
 	// , result = $("")
 	, addr = $("#sub-btn").attr("cmcc-ajax");
+	console.log(addr);
 	$.ajax({
 		url: addr,
 		statusCode: {404: function(){alert("Page not found!");}}		
