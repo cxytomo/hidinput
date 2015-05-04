@@ -7,6 +7,8 @@ $(document).ready(function(){
 		url: addr,
 		statusCode: {404: function(){alert("Page not found!");}}		
 	}).done(function(data) {
+		console.log("in");
+		console.log(data);
 		var dataset = data.data;
 		console.log(dataset);
 	});
